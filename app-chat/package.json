@@ -1,0 +1,41 @@
+{
+  "name": "app-chat",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "tsx worker.ts",
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@temporalio/client": "^1.0.0",
+    "@temporalio/workflow": "^1.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@temporalio/activity": "^1.0.0",
+    "@temporalio/core-bridge": "^1.0.0",
+    "@temporalio/worker": "^1.0.0",
+    "@swc/core-win32-x64-msvc": "^1.0.0",
+    "@esbuild/win32-x64": "^0.25.0",
+    "@typescript-eslint/eslint-plugin": "^8.59.0",
+    "@typescript-eslint/parser": "^8.59.0",
+    "@vitejs/plugin-react": "^4.0.0",
+    "eslint": "^9.0.0",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.14",
+    "globals": "^15.12.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0",
+    "vite": "^6.0.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": ["esbuild"]
+  }
+}
