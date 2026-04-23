@@ -58,6 +58,20 @@ pnpm start
 
 4. If any stage fails → workflow creates fix prompt → retries (up to 3 times)
 
+## Preview the Built App
+
+After `pnpm start` completes successfully:
+
+```bash
+# Preview the built app (separate terminal)
+pnpm preview
+
+# Or run Vite dev server
+pnpm dev
+```
+
+The app will be available at `http://localhost:4173` (preview) or `http://localhost:5173` (dev).
+
 ## Changing the App Spec
 
 Edit `worker.ts` line 24 to change the app specification:
