@@ -2,6 +2,17 @@
 
 A Temporal-based build pipeline that orchestrates building Vite+React+TypeScript applications using durable workflows with automatic error recovery.
 
+## Quick Start
+
+```bash
+git clone https://github.com/zazikant/temporal-workflow-for-agent.git
+cd temporal-workflow-for-agent
+pnpm install
+temporal.exe server start-dev   # (separate terminal)
+pnpm start                     # triggers workflow automatically
+# Then edit worker.ts line 24 with your app spec and run pnpm start again
+```
+
 ## What it does
 
 1. **Scaffold** - Creates a new Vite+React+TypeScript app from scratch
